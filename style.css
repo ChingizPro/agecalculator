@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+span, a, label {
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.page {
+    min-height: 100svh;
+    background-image: url('plant_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.box {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: green;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+}
+.form {
+    margin-bottom: 15px;
+}
+.label {
+    font-size: 24px;
+    margin-bottom: 7px;
+}
+.wrap {
+    display: flex;
+}
+.input, .button {
+    font-size: 19px;
+    border: none;
+    outline: none;
+}
+.input {
+    padding: 4px 6px;
+}
+.button {
+    padding: 4px 15px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.input:focus, .button:focus {
+    box-shadow: 0 0 10px black;
+}
+.text {
+    font-size: 23px;
+    color: blue;
+}
+@media(max-width:1200px){
+    .box {
+        width: 600px;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+@media(max-width:800px){
+    .box {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
+@media(max-width:600px){
+    .title {
+        font-size: 35px;
+    }
+    .label, .text {
+        font-size: 21px;
+    }
+    .input, .button {
+        font-size: 17px;
+    }
+}
+@media(max-width:500px){
+    .wrap {
+        flex-direction: column;
+    }
+    .input, .button {
+        width: 100%;
+    }
+    .box {
+        padding: 25px;
+    }
+    .inner {
+        width: 100%;
+    }
+    .title {
+        line-height: 1;
+    }
+    .label {
+        line-height: 1.2;
+    }
+}
